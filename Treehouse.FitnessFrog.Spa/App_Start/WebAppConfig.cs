@@ -6,7 +6,7 @@ using System.Web.Http;
 
 namespace Treehouse.FitnessFrog.Spa
 {
-    public static class WebAppConfig
+    public static class WebAppConfig 
     {
         public static void Register(HttpConfiguration config)
         {

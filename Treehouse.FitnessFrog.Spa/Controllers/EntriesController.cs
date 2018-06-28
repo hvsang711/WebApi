@@ -18,18 +18,27 @@ namespace Treehouse.FitnessFrog.Spa.Controllers
 
         public IEnumerable<Entry> Get()
         {
-            var activityBiking = new Activity() { Name = "Biking" };
-
-            return new List<Entry>()
-            {
-                new Entry(2018, 11, 12, activityBiking, 10.0m),
-                new Entry(2018, 1, 6, activityBiking, 12.0m)
-            };
+            return _entriesRepository.GetList();
         }
 
         public Entry Get(int id)
         {
-            return null;
+            return _entriesRepository.Get(id);
+        }
+
+        public void Post(Entry entry)
+        {
+            _entriesRepository.Add(entry);
+        }
+
+        public void Put(int id, Entry entry)
+        {
+            _entriesRepository.Update(entry);
+        }
+
+        public void Delete(int id)
+        {
+            _entriesRepository.Delete(id);
         }
     }
 }

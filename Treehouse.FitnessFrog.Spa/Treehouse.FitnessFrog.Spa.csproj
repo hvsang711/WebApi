@@ -115,6 +115,7 @@
     <Compile Include="Controllers\EntriesController.cs" />
     <Compile Include="Controllers\IntensitiesController.cs" />
     <Compile Include="Dto\ActivitiesDto.cs" />
+    <Compile Include="Dto\EntryDto.cs" />
     <Compile Include="Dto\IntensitiesDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
